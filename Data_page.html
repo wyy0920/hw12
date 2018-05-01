@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<!-- Cloudiness page-->
+<!-- Data page-->
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <title>Web Visualization Dashboard</title>
-  <link rel="stylesheet" href="reset.css">
+  <!--<link rel="stylesheet" href="reset.css">-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -39,7 +39,7 @@
                 <li><a href="max_temperature.html">Max Temperature</a></li>
                 <li><a href="humidity.html">Humidity</a></li>
                 <li><a href="cloudiness.html">Cloudiness</a></li>
-                <li><a href="wind_speed.html">Wind Speed</a></li>
+                <li><a href="wind_speed.html">Wind Speed</a></li> 
               </ul>
             </li>  
           <li><a href="Comparisons_page.html">Comparison</a></li>
@@ -53,32 +53,32 @@
     </nav>
 
      <!-- Creates the Overall Grid -->
-  <div class="container">
-  <section>
+    <div class="container">
+    <section>
     <!-- ROW 0 -->
     <div class="row">
-        <div class="col-md-8">
-          <h1 class="text-left">Cloudiness</h1>
+        <div class="col-md-12">
+          <h1 class="text-left">Data</h1> 
           </article>
           <hr>
-          <article>   
-            <img src="https://github.com/wyy0920/hw12/blob/master/output_data/latitude_vs_cloudiness.png?raw=true" width="75%">
-            <p>There appears to be no correlation between latitudes and cloudiness.
-            </p>
-        </div>
-        <div class="col-md-4">
-          <h2 class="text-left">Visualizations</h2>
-          </article>
-          <hr>
-          <article>
-            <div class="boxset">
-              <img id= "image1" src="https://github.com/wyy0920/hw12/blob/master/output_data/Latitude_vs_Temperature.png?raw=true" alt="Temperature vs Latitude scatterplot">
-                <img id= "image2" src="https://github.com/wyy0920/hw12/blob/master/output_data/Latitude_vs_humidity.png?raw=true" alt="Humidity vs Latitude scatterplot">
-                <img id= "image4" src="https://github.com/wyy0920/hw12/blob/master/output_data/latitude_vs_windspeed.png?raw=true" alt="Windspeed vs Latitude scatterplot">
-            </div>
+          <article>  
         </div>
     </div>
-  </section>
-  </div>
-</body>
+    
+    <!-- Row 1 -->
+    <div class="row">
+      <div class="col-md-12">
+        <h4 class="text-left">The following table includes all of the data points used for plotting in this project.</h4>
+      </div> 
+     </div> 
+    <!-- Row 2 TABLE -->
+      <div class="table">
+        <table class= "table table-striped"> 
+          <iframe src = "table.html" height="550" width= "1100">
+          </iframe>
+        </table>    
+      </div>
+    </section>
+    </div>
+  </body>
 </html>

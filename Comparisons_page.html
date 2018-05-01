@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<!-- Cloudiness page-->
 <html lang="en">
-
+<!-- Comparisons page-->
 <head>
   <meta charset="UTF-8">
   <title>Web Visualization Dashboard</title>
@@ -52,33 +51,66 @@
       <!-- /.container-fluid -->
     </nav>
 
-     <!-- Creates the Overall Grid -->
+    <!-- Creates the Overall Grid -->
   <div class="container">
   <section>
     <!-- ROW 0 -->
+    
     <div class="row">
-        <div class="col-md-8">
-          <h1 class="text-left">Cloudiness</h1>
-          </article>
-          <hr>
-          <article>   
-            <img src="https://github.com/wyy0920/hw12/blob/master/output_data/latitude_vs_cloudiness.png?raw=true" width="75%">
-            <p>There appears to be no correlation between latitudes and cloudiness.
-            </p>
-        </div>
-        <div class="col-md-4">
-          <h2 class="text-left">Visualizations</h2>
-          </article>
-          <hr>
-          <article>
-            <div class="boxset">
-              <img id= "image1" src="https://github.com/wyy0920/hw12/blob/master/output_data/Latitude_vs_Temperature.png?raw=true" alt="Temperature vs Latitude scatterplot">
-                <img id= "image2" src="https://github.com/wyy0920/hw12/blob/master/output_data/Latitude_vs_humidity.png?raw=true" alt="Humidity vs Latitude scatterplot">
-                <img id= "image4" src="https://github.com/wyy0920/hw12/blob/master/output_data/latitude_vs_windspeed.png?raw=true" alt="Windspeed vs Latitude scatterplot">
-            </div>
-        </div>
+      <div class="col-md-12">
+        <h1 class="text-left">Comparison: Latitude vs. X</h1>   
+      </div>
+      </div>
+      </article>
+      <hr>
+      <article>
+        
+    <!-- ROW 1 -->
+      <div class="row">
+      <div class="col-md-12">
+        <h4 class="text-left">Click any plot to get in-depth analysis.</h4>
+      </div>
     </div>
+
+    <!-- ROW 2 -->
+    <div class="row">
+      <div class="col-md-6">
+        <h3 class="text-center">vs. Max Temperature</h3>
+        <div class="thumbnail">
+            <a href="max_temperature.html"><img src="https://github.com/wyy0920/hw12/blob/master/output_data/Latitude_vs_Temperature.png?raw=true" alt="Temperature vs Latitude scatterplot"></a>
+            <div class="caption">
+            </div>
+          </div>
+      </div>
+      <div class="col-md-6">
+        <h3 class="text-center">vs. Humidity</h3>
+          <div class="thumbnail">
+            <a href="humidity.html"><img src="https://github.com/wyy0920/hw12/blob/master/output_data/Latitude_vs_humidity.png?raw=true" alt="Humidity vs Latitude scatterplot"></a>
+            <div class="caption">
+            </div>
+            </div>
+          </div>
+      </div>
+        
+    <!-- ROW 3 -->    
+    <div class="row">
+      <div class="col-md-6">
+        <h3 class="text-center">vs. Cloudiness</h3>
+          <div class="thumbnail">
+            <a href="cloudiness.html"><img src="https://github.com/wyy0920/hw12/blob/master/output_data/latitude_vs_cloudiness.png?raw=true" alt="Cloudiness vs Latitude scatterplot"></a>
+            <div class="caption">
+            </div>
+          </div>
+      </div>
+      <div class="col-md-6">
+        <h3 class="text-center">vs. Wind Speed</h3>
+          <div class="thumbnail">
+            <a href="Wind_Speed.html"><img src="https://github.com/wyy0920/hw12/blob/master/output_data/latitude_vs_windspeed.png?raw=true" alt="Windspeed vs Latitude scatterplot"></a>
+            <div class="caption">
+            </div>
+          </div>
+      </div>
   </section>
-  </div>
+  </div>    
 </body>
 </html>
